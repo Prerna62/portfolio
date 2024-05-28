@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<!-- <link rel="stylesheet" href="vali.css"> -->
+<style>
+.navposition{
+    position: fixed;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8bbabb;
+    padding: 15px;
+}
+#nav {
+       position: fixed;
+       top: 0;
+       width: 100%;
+       background-image: linear-gradient(90deg, #5a0e5851, #2907514b, #4135a94f);
+       background-color: transparent;
+       z-index: 9999;
+       transition: all 0.25s;
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+       padding: 10px;
+       box-sizing: border-box;
+       border-radius: 10px;
+       border: 1px solid rgb(248, 251, 251);
+}
+nav #logo {
+       font-size: 30px;
+       font-weight: bold;
+       font-family: "Times New Roman", Times, serif;
+       color: rgb(248, 251, 251);
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-top: 10px;    
+   }
+#menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu ul li{
+     font-size: 20px;
+    margin: 5px 10px;
+}
+#menu ul li a{
+    color: rgb(248, 251, 251);
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color:rgb(19, 63, 74);
+}
+#menu ul li button{
+    padding: 5px 20px 5px 20px;
+    background-color: black;
+    color: rgb(248, 251, 251);
+    border-radius: 8px;
+}
+#menu ul li button:hover{
+    background-color: rgb(248, 251, 251);
+}
+#home{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 140px;
+}
+.btn{
+    padding: 5px 20px 5px 20px;
+    background-color: black;
+    color: rgb(248, 251, 251);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px 25px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: rgb(248, 251, 251);
+    border: solid 1px black;
+}
+#home h2,h3{
+/* padding: 0px; */
+font-size: 40px;
+margin: 5px;
+}
+#myself i{
+padding-right: 15px;
+font-size: 45px;
+color: #8bbabb;
+}
+.icon{
+    margin-top: 10px;
+margin-left: 20px;
+}
+/* #img-dvp{
+    border: solid 2px black;
+    border-radius: 16px;
+} */
+#img-dvp img{
+    border-radius: 25px ;
+}
+#skill h1{
+    display: flex;
+justify-content: center;
+font-size: 50px;
+}
+#skill img{
+    width:150px;
+    height: 150px;
+}
+#skill .sklogo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+#skill h4{
+    font-size: 30px;
+}
+#wk-exp .hrline {
+    display: flex;
+    justify-content:space-around;
+  /* margin-left: -350px; */
+}
+#wk-exp .hrline h2{
+    display: flex;
+    justify-content: center;
+}
+#education .edu{
+    display: flex;
+    justify-content: space-around;
+}
+form label{
+    font-size: 25px;
+}
+form input{
+    width:  300px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: solid #8bbabb;
+    font-size: 15 px;
+}
+form button{
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: rgb(248, 251, 251);
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 10px 25px;
+    /* margin-right: 10px; */
+    font-size: 20px;
+}
+form button:hover{
+    background-color: rgb(248, 251, 251);
+    border: solid 1px black;
+    color: black;
+}
+.btnset{
+    display: flex;
+    justify-content: center;
+}
+</style>
+<body>
+    <div class="navposition">
+    <nav>
+    <div id="nav">
+        <div id="logo">Prerna's Portfolio</div>
+        <div id="menu">
+            <ul type="none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#wk-exp">Work experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><button><a href="#contact">Contact Me</a></button></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+</div>
+ <div id="home">
+    <div id="myself">
+        <h2> My Portfolio</h2>
+        <h3>Prerna sharma</h3>
+        <h3> I'm a <span style="color:#8bbabb;">wed developer</span></h3>
+        <button class="btn">Contact Us </button>
+        <button class="btn">Get resume </button> 
+        <br>
+        <div class="icon">
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-telegram"></i>
+        </div>
+    </div>
+    <div id="img-dvp">
+        <img src="img0.jpg" alt="I'm developer" width="500px">
+    </div>
+ </div>
+ <hr style="background-color: #8bbabb; height: 1px; margin: 50px 70px;">
+ <div id="skill">
+    <h1>MY SKILL</h1>
+        <div class="sklogo">
+            <div>
+              <img src="html logo.png" alt="html logo">
+              <h4>HTML developer</h4>
+              <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Explicabo <br> corrupti quo molestias dicta <br> numquam at?</p>
+            </div>
+            <div>
+              <img src="csslogo.png" alt="css logo">
+              <h4>CSS developer</h4>
+              <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Explicabo <br> corrupti quo molestias dicta <br> numquam at?</p>
+            </div>
+            <div>
+              <img src="jslogo.png" alt="js logo">
+              <h4>JavaScript developer</h4>
+              <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Explicabo <br> corrupti quo molestias dicta <br> numquam at?</p>
+            </div>
+            </div>
+    <br>
+        <div class="sklogo">
+            <div>
+                <img src="bootstraplogo.png" alt="bootstrap logo">
+                <h4>Bootstrap developer</h4>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Explicabo <br> corrupti quo molestias dicta <br> numquam at?</p>
+            </div>
+            <div>
+               <img src="wordpresslogo.png" alt="wordpresslogo">
+               <h4>WordPress developer</h4>
+               <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Explicabo <br> corrupti quo molestias dicta <br> numquam at?</p>
+            </div>
+             <div>
+                <img src="mysqllogo.png" alt="mysql logo">
+                <h4>MYSQL developer</h4>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Explicabo <br> corrupti quo molestias dicta <br> numquam at?</p>
+            </div>
+        </div>
+ <hr style="background-color: #8bbabb; height: 1px; margin: 50px 70px;">
+<div id="wk-exp">
+    <h1>WORK EXPERIENCE</h1>
+    <hr style="width: 1px; height: 30px; background-color: black; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+    <hr style=" height: 1px; background-color: black; margin: 0px 361px; padding-top: 0px; padding-bottom: 0px;">
+        <div class="hrline">
+            <div>
+                 <hr style="width: 1px; height: 30px; background-color: black; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                 <h2>intership: 01</h2>
+                 <p style="margin-left: 30px;margin-left: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, non quam recusandae porro nostrum quas labore laborum illo aut nobis unde natus architecto nesciunt sequi est! At, ipsum ex? Eos perferendis adipisci iure recusandae porro mollitia magni, corrupti quidem eaque nam quod amet dolor neque odio sed, necessitatibus accusantium nesciunt fuga sint culpa, facilis illum cum! Debitis dolore nemo architecto qui ipsum animi, illum ullam, officiis numquam hic eum ipsa tenetur! Magni explicabo maxime distinctio facilis repellat! Debitis aspernatur ipsum laborum magni! Numquam a amet eum, rem illo sunt! Quas perferendis fugit impedit eum nostrum qui labore quia, distinctio vitae.</p>
+            </div>
+            <div>
+                <hr style="width: 1px; height: 30px; background-color: black;padding-top: 0px;padding-bottom: 0px;margin-top: 0px; margin-bottom: 0px;">
+                <h2>Intership: 02</h2>
+                 <p style="margin-left: 40px;margin-left: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, non quam recusandae porro nostrum quas labore laborum illo aut nobis unde natus architecto nesciunt sequi est! At, ipsum ex? Eos perferendis adipisci iure recusandae porro mollitia magni, corrupti quidem eaque nam quod amet dolor neque odio sed, necessitatibus accusantium nesciunt fuga sint culpa, facilis illum cum! Debitis dolore nemo architecto qui ipsum animi, illum ullam, officiis numquam hic eum ipsa tenetur! Magni explicabo maxime distinctio facilis repellat! Debitis aspernatur ipsum laborum magni! Numquam a amet eum, rem illo sunt! Quas perferendis fugit impedit eum nostrum qui labore quia, distinctio vitae.</p>
+            </div>
+        </div>
+</div>
+<hr style="background-color: #8bbabb; height: 2px; margin: 50px 70px;">
+<div id="education">
+    <h1>EDUCATION</h1>
+    <div class="edu">
+        <h4>Government Girls Senior <br> Secondary School</h4>
+        <h3 style="font-size: 20px;">Mayur Vihar Phase-III New <br>Kondli Delhi 110096</h3>
+        <h5 style="font-size: 15px;">10TH(ALL SUBJECT)</h5>
+        <h5 style="font-size: 15px;">2018-19</h5>
+    </div>
+    <div class="edu">
+        <h4>Government Girls Senior <br> Secondary School</h4>
+        <h3 style="font-size: 20px;">Mayur Vihar Phase-III New <br>Kondli Delhi 110096</h3>
+        <h5 style="font-size: 15px;">12TH (ART STREAM)</h5>
+        <h5 style="font-size: 15px;">2020-21</h5>
+    </div>
+    <div class="edu">
+        <h4>Aditya Institute of <br>Technology(AIT), Delhi</h4>
+        <h3 style="font-size: 20px;">107, 9, Kishangarh - <br> Gaushala Marg, Vasant <br>Kunj, New  Delhi, <br>Delhi 110070</h3>
+        <h5>Computer Science <br>Engineering (Diploma)</h5>
+        <h5 style="font-size: 15px;">2021-24</h5>
+    </div>
+</div>
+<hr style="background-color: #8bbabb; height: 1px; margin: 50px 70px;">
+<div id="about" >
+    <h1>ABOUT ME</h1>
+    <div style="display: flex;justify-content: space-around; margin: 0px 40px;">
+        <div>
+            <img src="myphoto.jpg" alt="" style="width: 400px; height: 450px; border-radius: 200px;">
+        </div>
+        <div>
+            <p style="margin-left: 50px;font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi quo saepe nostrum eveniet sunt. Quasi nihil placeat consequatur laudantium facere, error soluta unde repellendus. Ut eos vel labore nam possimus, nesciunt quisquam placeat minus, illo ea alias sapiente eligendi! Autem optio, mollitia velit culpa aut modi voluptate accusantium? Sed quia ipsa in? Fugiat quam inventore omnis corrupti ab iusto vel asperiores eveniet suscipit, totam vero voluptate assumenda voluptates accusantium quia velit quos exercitationem tempore harum rem sapiente voluptas commodi. Accusamus dolorum vero vel ea officiis illum ipsum quibusdam enim dignissimos itaque cupiditate totam ratione eligendi id, nihil officia? Provident consequatur ipsum nisi asperiores eaque obcaecati itaque minima veritatis? Voluptates soluta animi odio cumque unde earum quibusdam iusto voluptatem quae fuga deleniti amet, fugiat eum sint impedit ullam delectus quisquam iste suscipit blanditiis eius aut ipsa? Quod sequi natus distinctio inventore </p>
+        </div>
+    </div>
+</div> 
+<hr style="background-color: #8bbabb; height: 1px; margin: 50px 70px;">
+<div id="contact"></div>
+<h1>CONTACT ME</h1>
+<div style="display: flex;justify-content: center;">
+<form action="" style="margin-top: 30px;">
+    <label for="fullname">Full Name</label>
+    <br>
+    <input type="text" id="fullname" name="fullname" placeholder="Your Full name" required>
+    <br>
+    <label for="phoneno">Phone number</label>
+    <br>
+    <input type="tel" id="phoneno" name="phonenumber" placeholder="Your phone number" required>
+    <br>
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="Your email id" required>
+    <br>
+    <div class="btnset">
+    <button >Submit</button>
+    </div>
+</form>
+</div>
+<hr style="background-color: #8bbabb; height: 1px; margin: 50px 70px;">
+<div class="footer" style="background-color: black; height: 250px; color: antiquewhite;"><footer>
+    <h1>Prerna's portfolio</h1>
+    <div>
+        <div style="display: flex;
+        justify-content: space-around;"> 
+            <div>
+                <h5>My Detail</h5>
+                <ul>
+                    <li>phone:-9818805762</li>
+                    <li>Email Id:-prerna.sharma.431039@gmail.com</li>
+                    <li>Address:- Flat no:141 <br> jay ambey apartment muyur <br> vihar phase: 3 new <br>kondli Delhi 110096</li>
+                </ul>
+            </div>
+             <div>
+                <ul>
+                    <li>About me</li>
+                    <li>Contact me</li>
+                    <li>Skill</li>
+                    <li>Home</li>
+                    <li>Work exprience</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex; justify-content: center;"><p>Copyright &copy My Portfolio,2024 all rights reserved</p></div>
+        </div>
+    </div>
+</footer></div>
+<script>
+
+</script>
+</body>
+</html>

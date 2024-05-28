@@ -1,0 +1,24 @@
+
+#a{
+    font-size:  20px;
+   }
+   
+}
+.main{
+    box-shadow: 0 0 16px 2px  #ccc;
+    border-radius: 10px;
+}
+form{
+    padding-left: 45px;
+}
+
+.e{
+    background-color: rgb(10, 68, 68);
+    border-radius: 10px 10px 0 0 ;
+    text-align: center;
+    padding: 20px 0;
+   }
+.e h1{ 
+    margin: 0px 40px;
+}
+
